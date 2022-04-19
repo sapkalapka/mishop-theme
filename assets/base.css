@@ -2336,7 +2336,7 @@ input[type='checkbox'] {
   display: flex;
   grid-area: icons;
   justify-self: end;
-  padding-right: 1rem;
+  padding-right: 2rem;
 }
 
 .header__icon:not(.header__icon--summary),
@@ -2409,6 +2409,7 @@ menu-drawer + .header__search {
 .header > .header__search {
   grid-area: left-icon;
   justify-self: start;
+  padding-left: 1rem;
 }
 
 .header:not(.header--has-menu) * > .header__search {
@@ -2611,6 +2612,8 @@ details[open] > .header__submenu {
   text-decoration: none;
   padding: 1.2rem;
   color: white;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 .header__menu-item:hover {
   color: rgba(var(--color-foreground), 0.7);
