@@ -625,7 +625,7 @@ a:not([href]) {
 }
 
 .circle-divider::after {
-  content: "\2022";
+  content: '\2022';
   margin: 0 1.3rem 0 1.5rem;
 }
 
@@ -651,8 +651,8 @@ hr {
   text-decoration: none;
   color: currentColor;
   display: block;
-  font-weight:700;
-  font-size:1.8rem;
+  font-weight: 700;
+  font-size: 1.8rem;
 }
 
 .placeholder {
@@ -747,7 +747,7 @@ summary::-webkit-details-marker {
   z-index: 2;
   display: block;
   cursor: default;
-  content: " ";
+  content: ' ';
   background: transparent;
 }
 
@@ -1248,8 +1248,8 @@ deferred-media {
 .shopify-challenge__button,
 .customer button,
 button.shopify-payment-button__button--unbranded,
-.shopify-payment-button [role="button"],
-.cart__dynamic-checkout-buttons [role="button"],
+.shopify-payment-button [role='button'],
+.cart__dynamic-checkout-buttons [role='button'],
 .cart__dynamic-checkout-buttons iframe {
   --shadow-horizontal-offset: var(--buttons-shadow-horizontal-offset);
   --shadow-vertical-offset: var(--buttons-shadow-vertical-offset);
@@ -1304,9 +1304,9 @@ button.shopify-payment-button__button--unbranded {
 .shopify-challenge__button:before,
 .customer button:before,
 .shopify-payment-button__button--unbranded:before,
-.shopify-payment-button [role="button"]:before,
-.cart__dynamic-checkout-buttons [role="button"]:before {
-  content: "";
+.shopify-payment-button [role='button']:before,
+.cart__dynamic-checkout-buttons [role='button']:before {
+  content: '';
   position: absolute;
   top: 0;
   right: 0;
@@ -1322,7 +1322,7 @@ button.shopify-payment-button__button--unbranded {
 .shopify-challenge__button:after,
 .customer button:after,
 .shopify-payment-button__button--unbranded:after {
-  content: "";
+  content: '';
   position: absolute;
   top: var(--buttons-border-width);
   right: var(--buttons-border-width);
@@ -1356,9 +1356,9 @@ button.shopify-payment-button__button--unbranded {
 .button:focus,
 .button.focused,
 .shopify-payment-button__button--unbranded:focus-visible,
-.shopify-payment-button [role="button"]:focus-visible,
+.shopify-payment-button [role='button']:focus-visible,
 .shopify-payment-button__button--unbranded:focus,
-.shopify-payment-button [role="button"]:focus {
+.shopify-payment-button [role='button']:focus {
   outline: 0;
   box-shadow: 0 0 0 0.3rem rgb(var(--color-background)),
     0 0 0 0.5rem rgba(var(--color-foreground), 0.5),
@@ -1368,7 +1368,7 @@ button.shopify-payment-button__button--unbranded {
 .button:focus:not(:focus-visible):not(.focused),
 .shopify-payment-button__button--unbranded:focus:not(:focus-visible):not(.focused),
 .shopify-payment-button
-  [role="button"]:focus:not(:focus-visible):not(.focused) {
+  [role='button']:focus:not(:focus-visible):not(.focused) {
   box-shadow: inherit;
 }
 
@@ -1401,10 +1401,10 @@ button.shopify-payment-button__button--unbranded {
 /* Button - other */
 
 .button:disabled,
-.button[aria-disabled="true"],
+.button[aria-disabled='true'],
 .button.disabled,
 .customer button:disabled,
-.customer button[aria-disabled="true"],
+.customer button[aria-disabled='true'],
 .customer button.disabled {
   cursor: not-allowed;
   opacity: 0.5;
@@ -1497,7 +1497,7 @@ details[open] > .share-button__fallback {
 
 .share-button__fallback:after {
   pointer-events: none;
-  content: "";
+  content: '';
   position: absolute;
   top: var(--inputs-border-width);
   right: var(--inputs-border-width);
@@ -1514,7 +1514,7 @@ details[open] > .share-button__fallback {
 .share-button__fallback:before {
   background: rgb(var(--color-background));
   pointer-events: none;
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   right: 0;
@@ -1656,7 +1656,7 @@ details[open] > .share-button__fallback {
 .customer select:before,
 .localization-form__select:before {
   pointer-events: none;
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   right: 0;
@@ -1675,7 +1675,7 @@ details[open] > .share-button__fallback {
 .customer select:after,
 .localization-form__select:after {
   pointer-events: none;
-  content: "";
+  content: '';
   position: absolute;
   top: var(--inputs-border-width);
   right: var(--inputs-border-width);
@@ -1874,7 +1874,7 @@ details[open] > .share-button__fallback {
   resize: none;
 }
 
-input[type="checkbox"] {
+input[type='checkbox'] {
   display: inline-block;
   width: auto;
   margin-right: 0.5rem;
@@ -1953,7 +1953,7 @@ input[type="checkbox"] {
 
 .quantity:after {
   pointer-events: none;
-  content: "";
+  content: '';
   position: absolute;
   top: var(--inputs-border-width);
   right: var(--inputs-border-width);
@@ -1970,7 +1970,7 @@ input[type="checkbox"] {
 .quantity:before {
   background: rgb(var(--color-background));
   pointer-events: none;
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   right: 0;
@@ -2056,7 +2056,7 @@ input[type="checkbox"] {
   margin: 0;
 }
 
-.quantity__input[type="number"] {
+.quantity__input[type='number'] {
   -moz-appearance: textfield;
 }
 
@@ -2226,19 +2226,15 @@ input[type="checkbox"] {
 
 .header {
   display: grid;
-  grid-template-areas: "left-icon heading icons";
+  grid-template-areas: 'left-icon heading icons';
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
+  margin-bottom: -2px;
   /* padding-top: 1rem;
   padding-bottom: 1rem; */
 }
 
 @media screen and (min-width: 990px) {
-  /* .header {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  } */
-
   .header--has-menu:not(.header--middle-left) {
     padding-bottom: 0;
   }
@@ -2246,29 +2242,29 @@ input[type="checkbox"] {
   .header--top-left,
   .header--middle-left:not(.header--has-menu) {
     grid-template-areas:
-      "heading icons"
-      "navigation navigation";
+      'heading icons'
+      'navigation navigation';
     grid-template-columns: 1fr auto;
   }
 
   .header--middle-left {
-    grid-template-areas: "heading navigation icons";
+    grid-template-areas: 'heading navigation icons';
     grid-template-columns: auto auto 1fr;
     column-gap: 2rem;
   }
 
   .header--top-center {
     grid-template-areas:
-      "left-icon heading icons"
-      "navigation navigation navigation";
+      'left-icon heading icons'
+      'navigation navigation navigation';
   }
 
   .header:not(.header--middle-left) .header__inline-menu {
-    margin-top: 1.05rem;
+    width: 100%;
   }
 }
 
-.header *[tabindex="-1"]:focus {
+.header *[tabindex='-1']:focus {
   outline: none;
 }
 
@@ -2340,6 +2336,7 @@ input[type="checkbox"] {
   display: flex;
   grid-area: icons;
   justify-self: end;
+  padding-right: 1rem;
 }
 
 .header__icon:not(.header__icon--summary),
@@ -2391,8 +2388,8 @@ input[type="checkbox"] {
   }
 }
 
-.header__icon--menu[aria-expanded="true"]::before {
-  content: "";
+.header__icon--menu[aria-expanded='true']::before {
+  content: '';
   top: 100%;
   left: 0;
   height: calc(
@@ -2458,7 +2455,7 @@ details[open] .modal-overlay {
 
 details[open] .modal-overlay::after {
   position: absolute;
-  content: "";
+  content: '';
   background-color: rgb(var(--color-foreground), 0.5);
   top: 100%;
   left: 0;
@@ -2596,7 +2593,9 @@ details[open] > .header__submenu {
   }
 
   .header--top-center .header__inline-menu > .list-menu--inline {
-    justify-content: center;
+    width: 100%;
+    color: white;
+    justify-content: space-evenly;
   }
 
   .header--middle-left .header__inline-menu {
@@ -2611,7 +2610,7 @@ details[open] > .header__submenu {
 .header__menu-item {
   text-decoration: none;
   padding: 1.2rem;
-  color: rgba(106,106,106, 1);
+  color: white;
 }
 .header__menu-item:hover {
   color: rgba(var(--color-foreground), 0.7);
@@ -2771,7 +2770,7 @@ details-disclosure > details {
 }
 
 .ratio::before {
-  content: "";
+  content: '';
   width: 0;
   height: 0;
   padding-bottom: var(--ratio-percent);
@@ -2785,7 +2784,7 @@ details-disclosure > details {
 }
 
 .content-container:after {
-  content: "";
+  content: '';
   position: absolute;
   top: calc(var(--text-boxes-border-width) * -1);
   right: calc(var(--text-boxes-border-width) * -1);
@@ -2826,7 +2825,7 @@ details-disclosure > details {
 }
 
 .global-media-settings:after {
-  content: "";
+  content: '';
   position: absolute;
   top: calc(var(--media-border-width) * -1);
   right: calc(var(--media-border-width) * -1);

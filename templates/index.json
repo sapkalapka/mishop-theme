@@ -19,8 +19,8 @@
         "5f6765c0-22f6-4fb0-b521-0a4b49b40c8f"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/H7-banner.jpg",
-        "image_overlay_opacity": 0,
+        "image": "shopify:\/\/shop_images\/working-at-night.jpg",
+        "image_overlay_opacity": 20,
         "image_height": "medium",
         "adapt_height_first_image": false,
         "desktop_content_position": "bottom-center",
